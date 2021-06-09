@@ -1,0 +1,23 @@
+{
+  "name": "nodejstool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "husky": "^6.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "lint": "eslint '**/*.{js,jsx}'",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "author": "Rafael sanchez <rafael.sanchez@moove-it.com> ",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/core": "^3.4.0",
+    "dotenv": "^10.0.0"
+  }
+}
